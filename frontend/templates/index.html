@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대학 입학 상담 시스템</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>대학 입학 상담 시스템</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="gpa">학점 (GPA):</label>
+                <input type="number" id="gpa" name="gpa" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="activities">교과외 활동:</label>
+                <textarea id="activities" name="activities" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="achievements">수상 실적:</label>
+                <textarea id="achievements" name="achievements" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="targetUniversities">지원 희망 대학:</label>
+                <textarea id="targetUniversities" name="targetUniversities" required></textarea>
+            </div>
+            <button type="submit">분석 요청</button>
+        </form>
+        <div id="result" class="result-container">
+            <div id="analysis"></div>
+            <div id="recommendations"></div>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
