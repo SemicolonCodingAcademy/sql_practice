@@ -43,3 +43,60 @@ button:hover {
     border-radius: 4px;
     display: none;
 }
+
+/* 전체 스타일 */
+body {
+    background-color: #f8f9fa;
+}
+
+/* 카드 스타일링 */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* 타임라인 스타일 */
+.timeline {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline-item {
+    padding: 1rem 0;
+    border-left: 2px solid #dee2e6;
+    margin-left: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #007bff;
+}
+
+/* 할 일 목록 스타일 */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+/* 대시보드 숫자 스타일 */
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
